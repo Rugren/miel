@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Superaplicación de la Miel (comprada)</title>
+</head>
+<body>
+    <h1 th:text="'Hola ' + ${nombre}">¡Hola Mundo de la miel!</h1>
+
+    <div th:each="palabra:${lista}">
+        <p th:text="${palabra}"></p>
+    </div>
+</body>
+</html>
