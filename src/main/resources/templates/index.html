@@ -5,10 +5,22 @@
     <title>Superaplicación de la Miel (comprada)</title>
 </head>
 <body>
-    <h1 th:text="'Hola ' + ${nombre}">¡Hola Mundo de la miel!</h1>
 
+<!-- Esto lo pusimos al principio de ejemplo
+<h1 th:text="'Hola ' + ${nombre}">¡Hola Mundo de la miel!</h1> -->
+
+<!--
     <div th:each="palabra:${lista}">
         <p th:text="${palabra}"></p>
     </div>
+ -->
+
+<h1>Listado de entradas de miel</h1>
+
+<div th:each="entrada:${listaEntradas}">
+    <p th:text="${entrada.paraje}"></p>
+</div>
+
+
 </body>
 </html>
